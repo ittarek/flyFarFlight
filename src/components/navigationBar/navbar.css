@@ -1,0 +1,27 @@
+.nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.nav img {
+     width: 143px;
+     height: 62px;
+}
+
+.nav Button {
+     background-color: var(--primary);
+     color: var(--input_bgColor);
+     padding: 8px 20px;
+     border-radius: 25px;
+     text-transform: uppercase;
+     cursor: pointer;
+     font-size: 12px;
+     width: fit-content;
+     line-height: 1.5;
+     letter-spacing: 0.00938em;
+     font-size: 12px;
+     font-weight: 600;
+     font-family: PT-Root-UI,
+          sans-serif;
+}
