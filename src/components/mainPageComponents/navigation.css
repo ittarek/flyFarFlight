@@ -1,0 +1,42 @@
+.tabLIst {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 610px;
+     padding: 0 10px;
+     background-color: var(--card_color);
+     position: absolute;
+     right: 27%;
+     border-radius: 20px;
+     height: 40px;
+     margin-top: 30px;
+     transition: 0.5s linear;
+}
+.tabLIst .MuiTab-root {
+     flex-grow: 1;
+     text-align: center;
+     color: var(--secondary_color);
+     width: fit-content;
+     min-height: fit-content;
+     padding: 5px 30px;
+}
+.tabLIst .MuiTab-root:focus {
+     background: var(--secondary_color);
+     border-radius: 30px;
+     color: white;
+
+}
+.icon {
+     font-size: 18px;
+     color: black;
+}
+.tabLIst .MuiTab-root:focus .icon {
+     color: white;
+}
+
+
+.main_items{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+}

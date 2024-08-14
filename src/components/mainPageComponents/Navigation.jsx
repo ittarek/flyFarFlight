@@ -3,13 +3,13 @@ import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
-import PhoneIcon from "@mui/icons-material/Phone";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import PersonPinIcon from "@mui/icons-material/PersonPin";
-import PhoneMissedIcon from "@mui/icons-material/PhoneMissed";
+import "./navigation.css"
 import { Box } from "@mui/material";
 import { TabList, TabPanel } from "@mui/lab";
-  
+  import { MdAirplaneTicket } from "react-icons/md";
+  import { GiCommercialAirplane } from "react-icons/gi";
+  import { MdOutlineMapsHomeWork } from "react-icons/md";
+  import { TbWorldSearch } from "react-icons/tb";
 const Navigation = () => {   
  const [value, setValue] = React.useState("1");
 
@@ -17,38 +17,54 @@ const Navigation = () => {
    setValue(newValue);
  };
      return (
-       <Box sx={{ width: "100%", typography: "body1" }}>
-         <TabContext value={value}>
-           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-             <TabList onChange={handleChange} aria-label="lab API tabs example">
+
+         <TabContext value={value} className="main_items">
+           <Box>
+             <TabList
+               className="tabLIst"
+               onChange={handleChange}
+
+               sx={{
+                 "& .MuiTabs-indicator": {
+                   display: "none",
+                 },
+               }}
+             >
                <Tab
                  value="1"
-                 icon={<PhoneMissedIcon />}
+                 icon={<GiCommercialAirplane className="icon" />}
                  iconPosition="start"
-                 label="start"
+                 label="FLIGHT"
                />
                <Tab
                  value="2"
-                 icon={<PhoneMissedIcon />}
+                 icon={<MdOutlineMapsHomeWork className="icon" />}
                  iconPosition="start"
-                 label="start"
+                 label="HOTEL"
                />
 
                <Tab
                  value="3"
-                 icon={<PhoneMissedIcon />}
+                 icon={<TbWorldSearch className="icon" />}
                  iconPosition="start"
-                 label="start"
+                 label="TOUR"
+               />
+               <Tab
+                 value="4"
+                 icon={<MdAirplaneTicket className="icon" />}
+                 iconPosition="start"
+                 label="VISA"
                />
              </TabList>
            </Box>
-           <Box sx={{ borderBottom: 1, borderColor: "divider", color:"red" }}>
+           <Box sx={{  color: "red" }}>
              <TabPanel value="1">Item One</TabPanel>
              <TabPanel value="2">Item Two</TabPanel>
              <TabPanel value="3">Item Three</TabPanel>
+             <TabPanel value="4">Item Three</TabPanel>
            </Box>
          </TabContext>
-       </Box>
+
      );
 };
 
