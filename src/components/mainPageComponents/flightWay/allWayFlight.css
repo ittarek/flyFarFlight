@@ -9,9 +9,10 @@
      padding: 15px;
      border-right: 3px dashed var(--input_bgColor);
      margin-top: -70px;
+  
+}
 
-     transition: 0.5s linear;
-}.FlightWayShared .fromFlight,
+.FlightWayShared .fromFlight,
 .FlightWayShared .flightIcon {
      animation: scaleIn 0.3s ease-in-out;
 }
@@ -154,4 +155,30 @@
      color: var(--input_bgColor);
      margin-bottom: 5px;
      background: var(--secondary_color);
+}
+
+
+/* responsive for mobil */
+@media screen and (max-width:600px) {
+     
+.FlightWayShared {
+          box-sizing: border-box;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: white;
+          border-radius: 10px;
+          padding: 15px;
+          border-right: 3px dashed var(--input_bgColor);
+          margin-top: -70px;
+
+     }
+
+
+
+
+
+
+
 }
