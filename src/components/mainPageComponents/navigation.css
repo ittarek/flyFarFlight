@@ -1,6 +1,5 @@
 .tabLIst {
-     display: flex;
-     justify-content: space-between;
+        justify-content: space-between;
      align-items: center;
      width: 610px;
      padding: 0  10px;
@@ -55,7 +54,33 @@
 }
 
 
+/* responsive for mobile*/
+@media screen and (max-width:600px) {
+     .tabLIst {
+            
+               width: 90%;       padding: 2px;
+                  right: 20px;
+                  margin: inherit auto;
+             
+          }
+.tabLIst .MuiTab-root {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
