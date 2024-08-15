@@ -1,0 +1,58 @@
+.flightScheduleNav {
+     margin-left: 10px;
+
+
+}
+.flightScheduleNav  .css-heg063-MuiTabs-flexContainer  {
+     /* background:red; */
+     width: 400px !important;
+     height: 20px;
+     margin-top: 10px;
+     margin-left: 35px;
+    
+}
+.mainContent{
+     display: flex;
+}
+.multiWay{
+     margin-bottom: 30px;
+}
+.flightSchedule {
+     margin-top: 80px;
+
+
+}
+
+.radio-input {
+     display: none;
+}
+
+.radio-custom {
+     height: 15px;
+     width: 15px;
+     background-color: var(--input_bgColor);
+     border-radius: 50%;
+     vertical-align: middle;
+     margin-left: 5px;
+}
+
+.radio-input+.radio-custom {
+     border: 1px solid;
+     box-sizing: border-box;
+}
+
+.radio-input:checked+.radio-custom {
+     background-color: var(--secondary_color) !important;
+     border: 1px solid;
+     box-sizing: border-box;
+}
+
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+     color: var(--secondary_color);
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+     box-sizing: border-box;
+     min-height: 0 !important;
+     padding: 0 !important;
+}

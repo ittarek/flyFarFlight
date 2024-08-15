@@ -1,0 +1,157 @@
+.FlightWayShared {
+     box-sizing: border-box;
+     height: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: white;
+     border-radius: 10px;
+     padding: 15px;
+     border-right: 3px dashed var(--input_bgColor);
+     margin-top: -70px;
+
+     transition: 0.5s linear;
+}.FlightWayShared .fromFlight,
+.FlightWayShared .flightIcon {
+     animation: scaleIn 0.3s ease-in-out;
+}
+
+/* Keyframes for scale and translation animation */
+@keyframes scaleIn {
+     from {
+          top: -25px;
+          opacity: 0;
+          transform: translateX(0%) scale(0.5);
+                visibility: hidden;
+     }
+
+     to {
+          top: 5px;
+          opacity: 1;
+          transform: translateX(0%) scale(1);
+         visibility: visible;
+     }
+}
+.fromFlight {
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     transition: 0.5s linear;
+}
+
+.airportSelection,
+.dateSelection {
+     margin-bottom: 10px;
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     background: var(--input_bgColor);
+     border-radius: 5px;
+     transition: 0.5s linear;
+}
+
+.MuiNativeSelect-select {
+     font-size: 13px !important;
+     font-weight: 400 !important;
+     color: var(--primary);
+}
+
+.FlightWaySharedIcon {
+     background: var(--secondary_color);
+     font-size: 20px;
+     padding: 3px;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+     color: var(--input_bgColor);
+}
+
+.fromSelection .airportSelection .FlightWaySharedIcon {
+     font-size: 24px;
+}
+
+.flightName {
+     text-align: center;
+}
+
+.flightName h1 {
+
+     font-size: 40px;
+     font-weight: 500;
+     color: var(--secondary_color);
+     margin-top: -20px;
+
+}
+
+.dateSelection {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+
+.flightIcon svg {
+     width: 80px;
+     position: absolute;
+}
+
+.flightIcon img {
+     width: 80px;
+     position: relative;
+     margin-top: 50px;
+     margin-left: 5px;
+}
+
+
+/* flight search css */
+.flightSearch {
+     background: white;
+     overflow: hidden;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+     margin-top: -70px;
+     box-sizing: border-box;
+}
+
+.flightSearch form .passenger {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 3px;
+     margin: 5px 0 10px 0;
+}
+
+.flightSearch form .passenger select,
+.economy {
+     border: none;
+     background: var(--input_bgColor);
+     padding: 5px;
+     margin: auto;
+     color: var(--primary);
+     border-radius: 5px;
+
+}
+
+.economy {
+     margin: 0;
+     width: 100%;
+
+}
+
+.flightSearch Button {
+     width: 100%;
+     color: white;
+     margin-bottom: 5px;
+     background: var(--secondary_color);
+}
+
+.flightSearch Button:hover {
+     width: 100%;
+     color: var(--input_bgColor);
+     margin-bottom: 5px;
+     background: var(--secondary_color);
+}

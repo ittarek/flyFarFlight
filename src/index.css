@@ -2,14 +2,18 @@
   font-family: PT-Root-UI, sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
-  max-width: 1152px;
+  max-width: 1080px;
+  height: 100vh;
+  box-sizing: border-box;
   margin: auto;
 font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --primary: #525371;
-  --input_bgColor: #d7e7f4;
-  --card_color: #ffffff;
-  --secondary_color : #32d095;
+      --primary: #525371;
+        --secondary_color: #32d095;
+        --text-color: #525371;
+        --body-color: #EDF2F6;
+        --card_color: #FFFFFF;
+        --input_bgColor: #d7e7f4;
 }

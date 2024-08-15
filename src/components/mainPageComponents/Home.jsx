@@ -4,10 +4,12 @@ import "./home.css"
 
 const Home = () => {
      return (
-          <div className="home">
-           <Navigation/>
-           <FlightSchedule/>    
-          </div>
+       <div className="home">
+         <div>
+           <Navigation />
+           
+         </div>
+       </div>
      );
 };
 

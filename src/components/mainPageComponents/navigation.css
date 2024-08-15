@@ -3,15 +3,15 @@
      justify-content: space-between;
      align-items: center;
      width: 610px;
-     padding: 0 10px;
+     padding: 0  10px;
      background-color: var(--card_color);
      position: absolute;
      right: 27%;
      border-radius: 20px;
-     height: 40px;
      margin-top: 30px;
      transition: 0.5s linear;
 }
+
 .tabLIst .MuiTab-root {
      flex-grow: 1;
      text-align: center;
@@ -20,23 +20,42 @@
      min-height: fit-content;
      padding: 5px 30px;
 }
+
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+     background: var(--secondary_color);
+     border-radius: 30px;
+     color: white !important;
+}
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+     color: var(--secondary_color)
+}
+
 .tabLIst .MuiTab-root:focus {
      background: var(--secondary_color);
      border-radius: 30px;
      color: white;
 
 }
-.icon {
-     font-size: 18px;
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root>.MuiTab-iconWrapper {
      color: black;
+     font-size: 18px;
 }
-.tabLIst .MuiTab-root:focus .icon {
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected>.MuiTab-iconWrapper {
      color: white;
 }
 
-
-.main_items{
+.main_items {
      display: flex;
      justify-content: space-around;
      flex-direction: column;
 }
+
+
+
+
+
+
